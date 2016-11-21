@@ -6,6 +6,7 @@
 package zwierzeta;
 
 import java.util.List;
+import wybieg.Wybieg;
 
 /**
  *
@@ -19,6 +20,7 @@ public class Zwierze {
     private int tempoJedzenia;
     private Integer poziomNajedzenia;
     private List<RodzajJedzenia> rodzajJedzenia;
+    private List<Wybieg.RodzajWybiegu> rodzajWybiegu;
 
     public Zwierze(String kod, String nazwa, int tempoJedzenia, List<RodzajJedzenia> rodzajJedzenia, int poziomNajedzenia) {
         this.kod = kod;

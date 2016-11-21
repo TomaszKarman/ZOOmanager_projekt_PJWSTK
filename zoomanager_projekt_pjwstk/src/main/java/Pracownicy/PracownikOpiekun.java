@@ -5,19 +5,15 @@
  */
 package Pracownicy;
 
+import zwierzeta.*;
+
 /**
  *
  * @author TKK
  */
-public class PracownikTechniczny {
-    private String kod;
-    private String imie;
-    private String nazwisko;
-    private double pensja;
-    
-    
-    
-    private void naprawWybieg ( wybieg.Wybieg wybieg) {
+public class PracownikOpiekun extends APracownik {
+
+    private void nakarmZwierze(Zwierze zwierze) {
     }
-    
+
 }

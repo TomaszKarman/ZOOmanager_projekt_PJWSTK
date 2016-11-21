@@ -3,21 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Pracownicy;
+package wybieg;
 
 /**
  *
  * @author TKK
  */
-public class PracownikTechniczny {
+public class Wybieg {
+private RodzajWybiegu rodzajWybiegu;
     private String kod;
-    private String imie;
-    private String nazwisko;
-    private double pensja;
-    
-    
-    
-    private void naprawWybieg ( wybieg.Wybieg wybieg) {
+
+    public enum RodzajWybiegu {
+
+        KLATKA, ZAMKNIETY, OTWARTY
     }
     
 }

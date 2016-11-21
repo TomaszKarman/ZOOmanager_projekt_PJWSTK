@@ -9,15 +9,9 @@ package Pracownicy;
  *
  * @author TKK
  */
-public class PracownikTechniczny {
-    private String kod;
+public class Magazynier {
+      private String kod;
     private String imie;
     private String nazwisko;
-    private double pensja;
-    
-    
-    
-    private void naprawWybieg ( wybieg.Wybieg wybieg) {
-    }
-    
+    private double pensja;   
 }
