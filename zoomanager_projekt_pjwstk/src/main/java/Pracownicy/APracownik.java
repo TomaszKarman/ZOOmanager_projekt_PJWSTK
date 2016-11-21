@@ -13,13 +13,19 @@ public class APracownik {
     protected final String kod;
     protected final String imie;
     protected final String nazwisko;
-    protected double pensja; 
+    private static double pensja=1200; 
 
-    public APracownik(String kod, String imie, String nazwisko, double pensja) {
+    public APracownik(String kod, String imie, String nazwisko) {
         this.kod = kod;
         this.imie = imie;
         this.nazwisko = nazwisko;
-        this.pensja = 1200;
+    }
+
+    public static void setPensja(double pensja) {
+        APracownik.pensja = pensja;
     }
     
+    
 }
+
+

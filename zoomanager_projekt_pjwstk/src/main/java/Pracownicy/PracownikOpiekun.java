@@ -13,6 +13,10 @@ import zwierzeta.*;
  */
 public class PracownikOpiekun extends APracownik {
 
+    public PracownikOpiekun(String kod, String imie, String nazwisko) {
+        super(kod, imie, nazwisko);
+    }
+
     private void nakarmZwierze(Zwierze zwierze) {
     }
 
