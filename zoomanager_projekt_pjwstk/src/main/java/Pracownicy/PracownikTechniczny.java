@@ -9,11 +9,15 @@ package Pracownicy;
  *
  * @author TKK
  */
-public class PracownikTechniczny {
+public class PracownikTechniczny extends APracownik{
     private String kod;
     private String imie;
     private String nazwisko;
     private double pensja;
+
+    public PracownikTechniczny(String kod, String imie, String nazwisko) {
+        super(kod, imie, nazwisko);
+    }
     
     
     
