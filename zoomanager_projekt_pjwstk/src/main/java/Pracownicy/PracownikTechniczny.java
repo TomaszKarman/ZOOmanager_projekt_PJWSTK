@@ -10,15 +10,15 @@ package Pracownicy;
  * @author TKK
  */
 public class PracownikTechniczny extends APracownik{
-    private String kod;
-    private String imie;
-    private String nazwisko;
-    private double pensja;
-
-    public PracownikTechniczny(String kod, String imie, String nazwisko) {
-        super(kod, imie, nazwisko);
+    private final static TYP_PRACOWNIKA typPracownika = TYP_PRACOWNIKA.TECHNICZNY;
+    
+    public PracownikTechniczny(int kod, String imie, String nazwisko) {
+        super(kod, imie, nazwisko,typPracownika);
     }
     
+    public PracownikTechniczny(int kod, String imie, String nazwisko,double pensja) {
+        super(kod, imie, nazwisko,pensja,typPracownika);
+    }
     
     
     private void naprawWybieg ( wybieg.Wybieg wybieg) {

@@ -5,13 +5,31 @@
  */
 package Pracownicy;
 
+import java.util.List;
+
 /**
  *
  * @author TKK
  */
-public class Magazynier {
-      private String kod;
-    private String imie;
-    private String nazwisko;
-    private double pensja;   
-}
+public class Magazynier extends APracownik{
+    private final static TYP_PRACOWNIKA typPracownika = TYP_PRACOWNIKA.MAGAZYNIER;
+private List <PozycjaMagazyn> magazyn;
+
+    public Magazynier(int kod, String imie, String nazwisko) {
+        super(kod, imie, nazwisko,typPracownika);
+    }
+
+    public Magazynier(int kod, String imie, String nazwisko,double pensja) {
+        super(kod, imie, nazwisko,pensja,typPracownika);
+    }
+    public List<PozycjaMagazyn> getMagazyn() {
+        return magazyn;
+    }
+
+    public void setMagazyn(List<PozycjaMagazyn> magazyn) {
+        this.magazyn = magazyn;
+    }
+    
+    private void zmienStanMagazyn (PozycjaMagazyn pozycja){
+    }
+    }
