@@ -14,15 +14,20 @@ import wybieg.Wybieg;
  */
 public class Zwierze {
 
-    private String kod;
+    private Integer kod;
     private String nazwa;
     private static final int MAX_NAJEDZENIE = 100;
     private int tempoJedzenia;
     private Integer poziomNajedzenia;
     private List<RodzajJedzenia> rodzajJedzenia;
     private List<Wybieg.RodzajWybiegu> rodzajWybiegu;
+    
+    public Zwierze(Integer id, String nazwa){
+        this.kod = id;
+        this.nazwa = nazwa;
+    }
 
-    public Zwierze(String kod, String nazwa, int tempoJedzenia, List<RodzajJedzenia> rodzajJedzenia, int poziomNajedzenia) {
+    public Zwierze(Integer kod, String nazwa, int tempoJedzenia, List<RodzajJedzenia> rodzajJedzenia, int poziomNajedzenia) {
         this.kod = kod;
         this.nazwa = nazwa;
         this.tempoJedzenia = tempoJedzenia;

@@ -34,12 +34,20 @@ public class PracownikRepository extends RepositoryBase<APracownik> {
 
     @Override
     protected String updateSql() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "update "
+                + tableName()
+                + " set (imie, nazwisko, pensja, id_typ_pracownika) ="
+                + "(?,?,?,?) "
+                + "where "
+                + "id = ?";
     }
 
     @Override
     protected void setUpdate(APracownik entity) throws SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        update.setString(1, entity.getImie());
+        update.setString(2, entity.getNazwisko());
+        update.setDouble(3, entity.getPensja());
+        update.setInt(4, entity.getTypPracownika().getId());
     }
 
     @Override
